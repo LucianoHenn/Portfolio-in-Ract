@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.deja-tu-mensaje{
+    display: block;
+    margin-bottom: 20vh;
+}
+
+.deja-tu-mensaje label{
+    color: #111111;
+    display: block;
+    font-weight: 700;
+    font-size: 1.25 rem;
+    font-family: Roboto,sans-serif;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-block-start: 2.33em;
+    margin-block-end: 20px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.deja-tu-mensaje div{
+    margin-bottom: 20px;
+}
+p{  
+    color: #111111;
+    font-family:'Open Sans',sans-serif;
+    width: 100%;
+    font-size: 12px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 0;
+    
+}
+.deja-tu-mensaje a{  
+    color: #111111;
+    font-family: Roboto,sans-serif;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+form{
+    width: 600px;
+    margin: auto;
+}
+.fondo{
+    width: 700px;
+    text-align: center;
+}
+.fondo-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+    margin-top: 12vh;
+}
+
+#newForm{
+    margin-top: 10vh;
+}
+
+.title{
+    margin-top: 5vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fotos{
+    margin-top: 600px;
+}
+.contact{
+    width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+   color: black;
+}

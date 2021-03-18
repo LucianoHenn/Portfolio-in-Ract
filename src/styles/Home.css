@@ -1,0 +1,85 @@
+*{
+    font-family: Arial,Helvetica,sans-serif; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+@font-face {font-family: "Druk Wide Bold";
+     src: url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot");
+      src: url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot?#iefix") format("embedded-opentype"), 
+      url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff2") format("woff2"),
+       url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.ttf") format("truetype"), 
+        url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.svg#Druk Wide Bold") format("svg"); }
+.d-block{
+    margin: 0 auto;
+    max-width: 450px;
+}
+#header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#header h1{
+    
+    font-family: "Druk Wide Bold", 'Martel Sans', sans-serif;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-weight: 400;
+    font-size: 100px;
+    letter-spacing: -0.02em;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+#header h4{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-align: right;
+    font-size: 29px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+
+.carousel{
+    margin-top: 10vh;
+}
+
+.enter{
+    font-family:  sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    width: 100%;
+    position: absolute;
+    bottom: 10vh;
+    text-align: right;
+    right: 10%;
+}
+.enter:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+a{
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    text-decoration: none;
+}
+.contenedor-imagen{
+    background-image: url("https://images.unsplash.com/photo-1594454073853-f631e9720e5e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDYyfHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60");
+}

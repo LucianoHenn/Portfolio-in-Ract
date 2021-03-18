@@ -1,0 +1,67 @@
+.img-zoom{
+    text-align: center;
+}
+
+.img-fluid{
+    max-width: 700px;
+    height: auto;
+}
+
+.envolvedor{
+    max-width: 41%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.envolvedor div{
+    flex: 1;
+}
+.photo{
+    max-width:700px ;
+    margin: 0 auto;
+
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 75%;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.flexor{
+    display: flex;
+    justify-content: center;
+    margin-top: 17vh;
+    margin-bottom: 30vh;
+}
+
+form button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-bottom: 25vh;
+}

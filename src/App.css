@@ -1,0 +1,210 @@
+@media only screen and (max-width: 1100px){
+  #header h1{
+    font-size: 80px;
+  }
+  .enter{
+    font-size: 2rem;
+   }
+   #header h4{
+    font-size: 24px;
+     }
+}
+@media only screen and (max-width: 800px){
+  #header h1{
+    font-size: 70px;
+  }
+  .enter{
+    font-size: 1.5rem;
+   }
+   #header h4{
+    font-size: 20px;
+     }
+     .carousel{
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto;
+    }
+    .d-block{
+      max-width: 100%;
+  }
+}
+@media only screen and (max-width: 715px){
+  #header h1{
+    font-size: 60px;
+  }
+  .enter{
+    font-size: 1.5rem;
+   }
+   #header h4{
+    font-size: 20px;
+     }
+}
+
+
+@media only screen and (max-width: 630px) {
+    
+  .imagen{
+      width: 100%;
+      height: 100%;
+      padding-bottom: 10px;
+  }
+  .imagenes{
+      margin: 0;
+      width: 100%;
+      justify-content: center;
+      
+  }
+  .contenedor div:first-child{
+      display: none;
+  }
+  .contenedor div:nth-child(2){
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 16vh;
+  }
+  .contenedor div:nth-child(3){
+      display: none;
+  }
+  #cande{
+      font-size: 28px;
+  }
+  .flexor{
+      margin-top:  6vh;
+      margin-bottom: 18vh;
+  }
+  .photo{
+    width: 50%;
+  }
+  .burger{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .burger:hover{
+    opacity: 0.7;
+  }
+  .hamburguesas{
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    transition: all 2s ease-in;
+  }
+  ul{
+    display: inline;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .links li{
+   display: flex;
+   justify-content: center;
+  }
+  .hamburguesa li{
+    font-size: 22px;
+    font-weight: lighter;
+    margin-bottom: 3vh;
+  }
+  .instagrami{
+    display: inline;
+    justify-content: center;
+    padding: 0;
+  }
+  .cruz{
+    position: absolute;
+    top: 4vh;
+    right: 6vw;
+    height: 24px;
+    cursor: pointer;
+  }
+  .cruz:hover{
+    opacity: 0.7;
+  }
+  .toggle{
+   display: none;
+  }
+  #header{
+    top: 55%;
+  }
+   #header h1{
+     font-size: 50px;
+   }
+   .carousel{
+     height: 300px;
+     width: 60%;
+     position: absolute;
+     top: 40%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%);
+     margin: 0 auto;
+   }
+   .d-block{
+    max-width: 100%;
+}
+   #header h4{
+  font-size: 16px;
+   }
+   .enter{
+    font-size: 1.2rem;
+   }
+
+}
+@media only screen and (max-width: 500px){
+  #header h1{
+    font-size: 40px;
+  }
+  .enter{
+    font-size: 1.1rem;
+   }
+   #header h4{
+    font-size: 18px;
+     }
+}
+
+@media only screen and (max-width: 480px) {
+ 
+  #cande{
+    font-size: 23px;
+}
+.fondo-div{
+  margin-top: 0;
+  margin-bottom: 5vh;
+}
+.fondo{
+  width: 100%;
+  text-align: center;
+}
+form{
+  max-width: 100%;
+}
+.fondo{
+    width: 700px;
+    text-align: center;
+}
+.deja-tu-mensaje{
+  margin-bottom: 10vh;
+}
+}
+@media only screen and (max-width: 400px){
+  #header h1{
+    font-size: 30px;
+  }
+  .enter{
+    font-size: 1rem;
+   }
+   #header h4{
+    font-size: 12px;
+     }
+}
