@@ -44,9 +44,9 @@ function NavBar(){
             <img className="cruz" onClick={handelClick} src="https://icons-for-free.com/iconfiles/png/512/close+cross+delete+exit+remove+icon-1320085939816384527.png" alt=""/>
             
             <ul>
-               <NavLink onClick={handelClick} to="/" activeClassName='active' className="links"><li>Home</li></NavLink> 
-               <NavLink onClick={handelClick} to="/work" activeClassName='active' className="links"><li>Work</li></NavLink> 
-                <NavLink onClick={handelClick} to="/contact" activeClassName='active'className="links"><li>Contact</li></NavLink>
+               <NavLink onClick={handelClick} to="/"  className="links"><li>Home</li></NavLink> 
+               <NavLink onClick={handelClick} to="/work"  className="links"><li>Work</li></NavLink> 
+                <NavLink onClick={handelClick} to="/contact" 'className="links"><li>Contact</li></NavLink>
                 <li>
                 <a className="links instagrami" target="_blank" href="https://www.instagram.com/candelariacarretero/">INSTAGRAM</a>
                 </li>
