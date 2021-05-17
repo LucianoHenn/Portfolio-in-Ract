@@ -46,7 +46,7 @@ function NavBar(){
             <ul>
                <NavLink onClick={handelClick} to="/"  className="links"><li>Home</li></NavLink> 
                <NavLink onClick={handelClick} to="/work"  className="links"><li>Work</li></NavLink> 
-                <NavLink onClick={handelClick} to="/contact" 'className="links"><li>Contact</li></NavLink>
+                <NavLink onClick={handelClick} to="/contact" className="links"><li>Contact</li></NavLink>
                 <li>
                 <a className="links instagrami" target="_blank" href="https://www.instagram.com/candelariacarretero/">INSTAGRAM</a>
                 </li>
