@@ -48,7 +48,7 @@ function NavBar(){
                <NavLink onClick={handelClick} to="/work" activeClassName='active' className="links"><li>Work</li></NavLink> 
                 <NavLink onClick={handelClick} to="/contact" activeClassName='active'className="links"><li>Contact</li></NavLink>
                 <li>
-                <a className="links instagrami" target="_blank" href="https://www.instagram.com/bycande___/?igshid=175lcssipfm5w">INSTAGRAM</a>
+                <a className="links instagrami" target="_blank" href="https://www.instagram.com/candelariacarretero/">INSTAGRAM</a>
                 </li>
                 
                 
