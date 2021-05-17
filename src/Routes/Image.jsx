@@ -1,7 +1,7 @@
 import {useParams} from "react-router-dom";
 import NavBar from "../components/NavBar";
 import "../styles/Image.css";
-import ReactMediumImg from 'react-medium-zoom';
+import ImageZoom from 'react-medium-image-zoom'
 import {useState, useEffect} from "react";
 import {app} from "../firebase/config";
 const db = app.firestore();
@@ -42,13 +42,17 @@ function Image(){
     <>
     <NavBar />
     <div className="flexor">
-    <ReactMediumImg
-        className="photo"
-        src={user.url}
-        alt={id}
-        onOpen={() => console.log('Image Open')}
-        onClosed={() => console.log('Image closed')}
-        
+    <ImageZoom
+        image={{
+          src: user.url,
+          alt: id,
+          className: 'img',
+          style: { width: '41%' }
+        }}
+        zoomImage={{
+          src: user.url,
+          alt: id,
+        }}
       />
     </div>
     </> :

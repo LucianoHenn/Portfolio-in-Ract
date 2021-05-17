@@ -12,7 +12,7 @@ function Contact() {
         <>
         <NavBar />
         <div className="fondo-div">
-        <img className="fondo" src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/_B0A1243.JPG?alt=media&token=f032885f-d0fe-438a-b216-065466a65311" alt=""/>
+        <img className="fondo" src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/_B0A1243%20(1).jpg?alt=media&token=519e6e81-d143-4ea8-a5b8-cc39f348a615" alt=""/>
         </div>
         <div className="contacto">
         <h3 className="contact">Contact</h3>
@@ -27,7 +27,7 @@ function Contact() {
             </div>
             <div>
                 <label>Instagram</label>
-             <a target="_blank" href="https://instagram.com/candelariacarretero?igshid=7mqp16030af5">candelariacarretero</a>
+             <a target="_blank" href="https://www.instagram.com/candelariacarretero/">@candelariacarretero</a>
             </div>
             <div>
                 <label>Location</label>

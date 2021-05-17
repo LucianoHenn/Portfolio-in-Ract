@@ -16,7 +16,7 @@ function Home(){
     <img
     fluid
       className="d-block "
-      src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/1.jpg?alt=media&token=06397303-c41a-47af-835d-17e3931ca813"
+      src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/1.jpg?alt=media&token=8d9cb2ee-08e1-4223-a764-d042dd3bb7d5"
       alt="First slide"
     />
   
@@ -25,7 +25,7 @@ function Home(){
     <img
     fluid
       className="d-block "
-      src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/2.JPG?alt=media&token=c8eb4352-da89-4bf9-a54a-92d02c0d01b9"
+      src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/2.jpg?alt=media&token=8406629e-688f-4e50-adb8-af3ef0b88fe7"
       alt="Third slide"
     />
 
@@ -35,7 +35,7 @@ function Home(){
     <img
         fluid
       className="d-block "
-      src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/4.jpg?alt=media&token=6c00c4f6-d217-45b0-a046-037e2a73d763"
+      src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/3.jpg?alt=media&token=58db14d0-6b51-4bac-a705-5d52a2c5715f"
       alt="Third slide"
     />
   </Carousel.Item>
@@ -43,7 +43,15 @@ function Home(){
     <img
     fluid
       className="d-block "
-      src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/5.JPG?alt=media&token=475321ef-350c-4849-8fd3-9188daa16d0e"
+      src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/4.jpg?alt=media&token=c3d2e5cb-3c36-4ade-93a0-a7caed3b0e3c"
+      alt="Third slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item interval={2000}>
+    <img
+    fluid
+      className="d-block "
+      src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/5.jpg?alt=media&token=ac69e2a6-4864-4818-8794-b1b115ff1ebd"
       alt="Third slide"
     />
   </Carousel.Item>

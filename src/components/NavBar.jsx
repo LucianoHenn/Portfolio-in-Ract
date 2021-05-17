@@ -17,6 +17,7 @@ function NavBar(){
         
         <div>
             <ul className="navlinks">
+               <NavLink to="/" className="links home"><li>Home</li></NavLink> 
                <NavLink to="/work" activeClassName='active' className="links"><li>Work</li></NavLink> 
                 <NavLink to="/contact" activeClassName='active'className="links"><li>Contact</li></NavLink>
 
@@ -27,13 +28,13 @@ function NavBar(){
             <h3 id="cande">candelaria</h3>
             </NavLink>
         </div>
-        <div className="ig">
+        {/* <div className="ig">
             <a target="_blank" href="https://www.instagram.com/bycande___/?igshid=175lcssipfm5w">
             <img src="https://cdn.icon-icons.com/icons2/1558/PNG/512/353424-instagram-logo_107474.png" alt=""/>
             </a>
            
 
-        </div>
+        </div> */}
         <div className="burger">
             <img className="burger" onClick={handelClick} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt=""/>
         </div>
@@ -41,7 +42,9 @@ function NavBar(){
     </div>
     <div className={isActive ? "hamburguesas" : "hamburguesa"}>
             <img className="cruz" onClick={handelClick} src="https://icons-for-free.com/iconfiles/png/512/close+cross+delete+exit+remove+icon-1320085939816384527.png" alt=""/>
+            
             <ul>
+               <NavLink onClick={handelClick} to="/" activeClassName='active' className="links"><li>Home</li></NavLink> 
                <NavLink onClick={handelClick} to="/work" activeClassName='active' className="links"><li>Work</li></NavLink> 
                 <NavLink onClick={handelClick} to="/contact" activeClassName='active'className="links"><li>Contact</li></NavLink>
                 <li>
