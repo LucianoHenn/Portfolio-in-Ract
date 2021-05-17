@@ -12,6 +12,10 @@ const db = app.firestore()
 
 
 function Inicio(){
+
+    function componentDidMount(){
+        let el = document.querySelector('.myElement');
+        el.classList.add('fade-in')};
     
     const [isActive, setActive] = useContext(Context);
 
@@ -37,37 +41,51 @@ function Inicio(){
         history.push(`/image`)
       }
 
-    console.log(images); 
-
+ 
+    let rows=[];
     let col1 =  [];
     let col2 = [];
     let col3 = [];
     let col4 = [];
     let col5 = [];
     let j = 0 ;
+    let row=1;
     for(let i=0;i<images.length;i++){
         const linkk="/image/"+images[i].name;
             switch(j){
                 case 0:
-                    col5.push(<Link to={linkk}><img className={`imagen ${isActive ? "toggle" : ""}`} src={images[i].url} alt={images[0].name}/></Link>)
+                    col5.push(<div class="column"><Link to={linkk}><img className={`imagen ${isActive ? "toggle" : ""}`} src={images[i].url} alt={images[0].name}/></Link></div>)
                     break;
                 case 1:
-                    col4.push(<Link to={linkk}><img className={`imagen ${isActive ? "toggle" : ""}`}src={images[i].url} alt={images[0].name}/></Link>)
+                    col4.push(<div class="column"><Link to={linkk}><img className={`imagen ${isActive ? "toggle" : ""}`}src={images[i].url} alt={images[0].name}/></Link></div>)
                     break;
                 case 2:
-                    col3.push(<Link to={linkk}><img className={`imagen ${isActive ? "toggle" : ""}`} src={images[i].url} alt={images[0].name}/></Link>)
+                    col3.push(<div class="column"><Link to={linkk}><img className={`imagen ${isActive ? "toggle" : ""}`} src={images[i].url} alt={images[0].name}/></Link></div>)
                     break;
                 case 3:
-                    col2.push(<Link to={linkk}><img className={`imagen ${isActive ? "toggle" : ""}`} src={images[i].url} alt={images[0].name}/></Link>)
+                    col2.push(<div class="column"><Link to={linkk}><img className={`imagen ${isActive ? "toggle" : ""}`} src={images[i].url} alt={images[0].name}/></Link></div>)
                     break;
                 case 4:
-                    col1.push(<Link to={linkk}><img className={`imagen ${isActive ? "toggle" : ""}`} src={images[i].url} alt={images[0].name}/></Link>)
+                    col1.push(<div class="column"><Link to={linkk}><img className={`imagen ${isActive ? "toggle" : ""}`} src={images[i].url} alt={images[0].name}/></Link></div>)
                     break;
             }
         j++;
-        if(j===5)
-        j=0;
+        if(j===5){
+            j=0;
+            rows.push(col1.concat(col2).concat(col3).concat(col4).concat(col5));
+            col1=[];
+            col2=[];
+            col3=[];
+            col4=[];
+            col5=[];
+        }
+       
+        
     }
+
+
+
+
 
 
 
@@ -78,25 +96,21 @@ function Inicio(){
             band ? 
     <>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <div className={`${
+        band ? 'fade-in' :  'yElement'}`}>
        <NavBar />
-       <div class="row"> 
-  <div class="column">
-    {col5}
-  </div>
-  <div class="column">
-   {col4}
-  </div>  
-  <div class="column">
-    {col3}
-  </div>
-  <div class="column">
-  {col2}
-  </div>
-  <div class="column">
-  {col1}
-  </div>
-</div>
-      
+        <div id="gallery">
+       {images.map(
+                image => {
+                    const linkk="/image/"+image.name;
+                    var divStyle = {
+                        backgroundImage: 'url(' + image.url + ')',
+                        width: '300px'
+                      };
+                    return <Link to={linkk}  style={divStyle}></Link>
+       })}
+        </div>
+        </div>
         </> :
     <div>
         

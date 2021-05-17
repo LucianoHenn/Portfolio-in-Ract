@@ -2,12 +2,18 @@ import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/Home.css"
 import {Link} from "react-router-dom";
+import { useState} from "react";
 
 function Home(){
+
+    const [imageLoaded, setImageLoaded]=useState(false);
+
+
     return(
         <>
         
-        <div id="header">
+        <div id="header" className={`smooth-image image-${
+        imageLoaded ? 'visible' :  'hidden'}`}>
         <Link to="/work" ><h1>Candelaria</h1></Link>
         <Link to="/work"><h4>Photographer</h4></Link>
         </div>
@@ -15,11 +21,16 @@ function Home(){
   <Carousel.Item interval={2000} >
     <img
     fluid
-      className="d-block "
+      className={`smooth-image d-block image-${
+        imageLoaded ? 'visible' :  'hidden'}`}
       src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/1.jpg?alt=media&token=8d9cb2ee-08e1-4223-a764-d042dd3bb7d5"
       alt="First slide"
-    />
-  
+      onLoad={()=> setImageLoaded(true)} />
+       {!imageLoaded && (
+          <div className="smooth-preloader">
+            <span className="loader" />
+          </div>
+        )}
   </Carousel.Item >
   <Carousel.Item interval={2000}>
     <img
@@ -57,7 +68,8 @@ function Home(){
   </Carousel.Item>
 
 </Carousel>
-<Link to="/work"><span className="enter">Enter</span></Link>
+<Link to="/work"><span className={`enter image-${
+        imageLoaded ? 'visible' :  'hidden'}`}>Enter</span></Link>
         </>
     )
 }

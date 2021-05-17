@@ -7,12 +7,13 @@ import {Context} from "../Context";
 function Contact() {
 
     const [isActive, setActive] = useContext(Context);
+    const [imageLoaded, setImageLoaded]=useState(false);
 
     return(
         <>
         <NavBar />
         <div className="fondo-div">
-        <img className="fondo" src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/_B0A1243%20(1).jpg?alt=media&token=519e6e81-d143-4ea8-a5b8-cc39f348a615" alt=""/>
+        <img  onLoad={()=> setImageLoaded(true)} className={`fondo smooth-image image-${imageLoaded ? 'visible' :  'hidden'}`} src="https://firebasestorage.googleapis.com/v0/b/candelaria-bfe12.appspot.com/o/_B0A1243%20(1).jpg?alt=media&token=519e6e81-d143-4ea8-a5b8-cc39f348a615" alt=""/>
         </div>
         <div className="contacto">
         <h3 className="contact">Contact</h3>

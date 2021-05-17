@@ -10,11 +10,15 @@
      }
 }
 @media only screen and (max-width: 800px){
-
-  .column {
-    flex: 50%;
+  #gallery{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #gallery a{
+    flex-basis: calc(48%);
     max-width: 50%;
   }
+ 
   .row{
     margin: 0;
   }
@@ -201,6 +205,18 @@
  
 }
 
+@media only screen and (max-width: 540px){
+  #gallery{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #gallery a{
+    height: 60vh;
+    flex: 1 0 calc(100%);
+    max-width: 100%;
+  }
+     
+}
 @media only screen and (max-width: 500px){
   #header h1{
     font-size: 40px;

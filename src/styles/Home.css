@@ -86,3 +86,15 @@ a:hover{
 .contenedor-imagen{
     background-image: url("https://images.unsplash.com/photo-1594454073853-f631e9720e5e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDYyfHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60");
 }
+
+/** styles.css */
+
+.smooth-image {
+    transition: opacity 1s;
+  }
+  .image-visible {
+    opacity: 1;
+  }
+  .image-hidden {
+    opacity: 0;
+  }
