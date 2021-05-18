@@ -192,15 +192,15 @@ display: flex;
      display: flex;
      max-width: 100%;
      flex-wrap: wrap;
-     gap: 14px;
      margin-bottom: 14px;
  }
 
  #gallery a{
-    flex: 1 1 calc(18%);
-    max-width: 20%;
+    flex: 1 1 calc(92.5%/5);
+    max-width: calc(92.5%/5);
      background-size: cover;
      background-position: center;
+     margin: 0.5%;
  }
 
  #gallery a:before{
