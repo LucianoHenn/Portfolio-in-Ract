@@ -8,7 +8,7 @@ function NavBar(){
 
     const handelClick = () => {
       setActive(!isActive);
-      console.log(isActive);
+      document.body.classList.toggle('stop-scrolling');
     }
 
     return(
