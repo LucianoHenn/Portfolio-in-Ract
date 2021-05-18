@@ -37,6 +37,7 @@ function Image(){
    
 
     return(<>
+    <meta content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0,width=device-width" name="viewport">
     { 
             band ? 
     <>
