@@ -17,6 +17,13 @@
   #gallery a{
     flex-basis: calc(48%);
     max-width: 50%;
+    margin: 1.2%;
+  }
+  #gallery a:nth-of-type(2n+1){
+    margin-left: 0;
+  }
+  #gallery a:nth-of-type(2n){ 
+    margin-right: 0;
   }
  
   .row{
@@ -102,8 +109,8 @@
       margin-top:  6vh;
       margin-bottom: 18vh;
   }
-   .flexor img{
-    height: 100%;
+  .flexor img{
+    width: 50%;
   }
   .photo{
     width: 50%;
@@ -190,6 +197,7 @@
    }
 
 }
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
@@ -221,6 +229,8 @@
     height: 60vh;
     flex: 1 0 calc(100%);
     max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
      
 }
