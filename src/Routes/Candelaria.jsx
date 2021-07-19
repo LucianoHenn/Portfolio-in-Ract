@@ -28,7 +28,7 @@ function Candelaria(){
 <>
     <NavBar />
     <div className="title">
-      <h2>Your Pictures</h2>
+      <h2>Your Pictures!</h2>
       <p>Click here to upload a new picture</p>
     </div>
     <form onSubmit>
